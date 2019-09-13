@@ -23,25 +23,31 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -63,4 +69,174 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+.get-started h1{
+	font-size: 85px;
+	width: 310px;
+	text-align: center;
+}
+
+.get-started h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	border: solid darkgray 1px;
+	width: 150px;
+	padding: 5px;
+	text-align: center;
+	margin: auto;
+}
+
+.container{
+	width: 900px;
+	margin: auto;
+}
+
+header nav{
+	display: inline-block;
+	margin-top: 5px;
+	position: fixed;
+	background-color: lightgray;
+	padding: 7px;
+	opacity: 90%;
+}
+
+header nav a{
+	position: relative;
+	z-index: 0;
+}
+
+header nav a:link{
+	color: gray;
+	margin: 0px 25px;
+	padding: 2px;
+	text-decoration: none;
+}
+
+header nav a:visited{
+	color: gray;
+}
+
+/* Animation Stretch Goal */
+header nav a:before{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+header nav a:after{
+	position: absolute;
+	top:20px;
+	left: 0px;
+    width: 0px;
+    background: lightgray;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+header nav a:hover{
+	color: #333333;
+}
+
+header nav a:hover:before, header nav a:hover:after{
+	opacity: 1;
+	width: 100%;
+	height: 2px;
+	background: dodgerblue
+}
+
+header nav a:hover:after{
+	transform: translateY(-20px);
+}
+
+/* ------End Animation------ */
+
+
+header .logo{
+	display: block;
+	margin-left: 700px;
+	margin-top: 10px;
+	margin-bottom: 100px;
+	background-image: url("../img/logo.png");
+	height: 36px;
+	width: 183px;
+}
+
+.get-started{
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.get-started a:link{
+	color: gray;
+	text-decoration: none;
+}
+
+.get-started a:visited{
+	color: gray;
+}
+
+.get-started h2:hover, .get-started a:hover{
+	color: white;
+	background-color: dodgerblue;
+	font-weight: 900;
+	transition: all .3s;
+}
+
+.get-started h2:hover{
+	border: solid 1px white;
+}
+
+#round-image{
+	background-image: url("../img/header-img.png");
+	height: 379px;
+	width: 379px;	
+	display: block;
+	margin-left: 500px;
+	margin-top: -350px;
+	margin-bottom: 50px;
+}
+
+hr{
+	border-top: 1px black;
+	margin-bottom: 40px;
+}
+
+.content-top{
+	width: 100%;
+}
+
+.content-top-box {
+	display: inline-block;
+	width: 47.8%;
+	margin: 1%;
+}
+
+.middle-img{
+	width:100%;
+	margin: 10px auto;
+	background-image: url("../img/mid-page-accent.jpg");
+	width:876px;
+	height:182px;
+}
+
+.content-bottom {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.content-bottom-box {
+	display: inline-block;
+	width: 31%;
+	margin: 1%;
+}
+
+footer p{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+}
